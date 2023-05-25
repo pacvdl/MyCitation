@@ -1,0 +1,205 @@
+/* Petit tip's by isma pour faire une recherche appuyez sur les touches "CTRL" + "F" */
+
+
+
+/* LES POLICES DU SITE */
+@font-face {
+	font-family: "MyBroken";
+	src: url("mypolice/Broken.ttf");
+	
+}
+@font-face {
+	font-family: "MyEmerland";
+	src: url("mypolice/EmerlandRegular.ttf");
+	
+}
+@font-face {
+	font-family: "MyBold";
+	src: url("mypolice/THEBOLDFONT 2022.otf");
+	
+}
+body{
+	background-color:#d7d3ca;
+    margin:0;
+    padding:0;
+    overflow: none;	
+}
+/* EFFET DE BRUIT */
+.bruit::before,
+.bruit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 9999;
+      mix-blend-mode: lighten;
+opacity:0.02;
+}
+
+.bruit::before {
+  background-image: url(noise.png);
+  opacity: 0.2;
+}
+
+/* CSS DE LA SELECTION DES TEXTES */
+*::selection{
+    background-color:#a7a7a7 ;
+    opacity:0.5;
+}
+
+/* CSS DE LA DIV CENTREUR QUI COMPREND TOUT LES ELEMENTS SAUF NAVBAR ET FOOTER */
+.centreur{
+    display:flex;
+    min-height: 75vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;    
+}
+
+.highlight {
+    background-color: #a7a7a7 ;
+    opacity: 0.5;
+}
+
+/* CSS DU TITRE */
+.titre{
+    color:#4c3e3e;
+    font-family:'MyBroken';
+	font-size: 2.5em;
+	padding:0;
+}
+/* CSS DU TEXTE EN DESSOUS DES TITRES */
+.description{
+    color:#1e3f88;
+    text-align:center;
+    font-family:'MyEmerland';
+    font-size:1.2em;
+}
+.descriptionn{
+    color:#1e3f88;
+    text-align:center;
+    font-family:'MyBold';
+    font-size:1.3em;
+}
+/* CSS DE LA BARRE DE NAV */
+.navigation {
+	font-size: 18px;
+	text-align: center;
+	list-style: none;
+	padding: 14px 16px;
+	font-family:'MyEmerland';
+}
+
+.navigation li {
+	text-align: center;
+	display: inline-block;
+    padding: 0px 20px;
+}
+
+.navigation a{
+   color:#1e3f88;
+   text-decoration:none;
+}
+
+/* CSS DU FOOTER */
+.basdepage{
+   bottom:0;
+   width:100%;
+   padding-top:50px;
+}
+.bdptext{
+    color:#1e3f88;
+    text-align:center;
+    font-family:'MyEmerland';
+	    font-size:18px;
+
+}
+.bdptext2 {
+    color:#7367F0;
+    text-align:center;
+    font-size:18px;
+    font-family:'MyEmerland';
+
+}
+
+.bdptext2 a{
+    text-decoration:none;
+    color:#7367F0;
+}
+
+/* CSS DU BOUTTON PRINCIPALE ET DE SON HOVER */
+.boutton{
+  margin:0 auto;
+  padding: 8px 22px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: solid #4c3e3e 0.1em;
+  border-radius: 2px;
+  color: #4c3e3e;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: large;
+  font-family: 'MyEmerland', sans-serif;
+  transition-duration: 0.3s;
+  position:relative;
+  margin-top:20px;
+  vertical-align:baseline;
+}
+
+
+.boutton:hover{
+  background-color: white;
+  border: solid white 0.1em;
+  color: #1e3f88;
+
+}
+
+/* CSS DES INPUTS SANS CLASS */
+input {
+    background-color: transparent;
+    color: black;
+    padding: 12px 60px;
+    border: 1px #4c3e3e solid ;
+	border-radius: 2px;
+    cursor: pointer;
+    outline:none;
+    font-size: 18px;
+    font-family: "MyEmerland";
+}
+/* CSS DES LABEL SANS CLASS */
+label {
+    font-weight: bold;
+	font-family: 'MyEmerland';
+	font-size: 17px;
+	color: #1e3f88;
+}
+
+/* CSS DE LA CITATION */
+select {
+    background-color: transparent;
+    color: black;
+    border: 1px #4c3e3e solid ;
+    cursor: pointer;
+    outline:none;
+    font-size: 18px;
+    font-family: "MyEmerland";
+    
+}
+.citation {
+	color:#1e3f88;
+    text-align:center;
+    font-family:'MyEmerland';
+    font-size:2em;
+	
+}
+
+/* CSS DU MENU DEROULANT */
+.card-container {
+  display: flex;
+  justify-content: center;
+}

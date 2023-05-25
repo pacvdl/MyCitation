@@ -44,4 +44,4 @@ Documentation :
 Une documentation complète doit être créée pour expliquer l'utilisation de l'application aux utilisateurs et faciliter la maintenance future du projet.
 La documentation doit comprendre des instructions claires sur les fonctionnalités de l'application et son utilisation.
 Conclusion :
-Le développement de l'application "My Citation" vise à offrir aux utilisateurs un générateur de citations basé sur l'API Quotable. L
+Le développement de l'application "My Citation" vise à offrir aux utilisateurs un générateur de citations basé sur l'API Quotable. 
